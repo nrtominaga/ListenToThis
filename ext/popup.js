@@ -1,4 +1,4 @@
-let changeColor = document.getElementById('changeColor');
+let record = document.getElementById('record');
 
 chrome.storage.sync.get('color', function(data) {
     changeColor.style.backgroundColor = data.color;
