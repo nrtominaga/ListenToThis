@@ -1,11 +1,12 @@
-let record = document.getElementById('record');
+let recordButton = document.getElementById("record");
 
-record.onclick = function() {
+recordButton.onclick = startRecording();
+
+function startRecording() {
     chrome.tabCapture.capture({
-        video:false,
-        audio:true
+        video: false, audio: true
     },
-    function(stream){
-
+        function (stream) {
+            console.log("idk");
     });
-};
+}
